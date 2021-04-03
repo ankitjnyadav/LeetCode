@@ -44,6 +44,6 @@ def longestValidParentheses(s: str) -> int:
              stack.pop()
              ans = max(ans,i - stack[-1])
           else:
-          stack.append(i)
+            stack.append(i)
     return ans
 longestValidParentheses(s="(()")
